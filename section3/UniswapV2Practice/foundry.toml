@@ -3,6 +3,6 @@ src = "src"
 out = "out"
 libs = ["lib"]
 
-rpc_endpoints = {mainnet = MAINNET_RPC_ENDPOINT}
+rpc_endpoints = {mainnet = "https://eth-mainnet.g.alchemy.com/v2/dwhCNmMVbzaUyIBpd6IhRppq_ZB01_JI"}
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
