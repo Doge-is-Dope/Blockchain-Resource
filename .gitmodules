@@ -13,3 +13,6 @@
 [submodule "section3/UniswapV2Practice/lib/openzeppelin-contracts"]
 	path = section3/UniswapV2Practice/lib/openzeppelin-contracts
 	url = https://github.com/openzeppelin/openzeppelin-contracts
+[submodule "section3/SimpleSwap/lib/openzeppelin-contracts"]
+	path = section3/SimpleSwap/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
