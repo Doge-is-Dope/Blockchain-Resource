@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.17;
+pragma solidity ^0.8.17;
 
 interface ISimpleSwapEvent {
     /// @param sender The address of the msg sender
@@ -20,11 +20,7 @@ interface ISimpleSwapEvent {
     /// @param amountIn The amount of tokenIn to swap
     /// @param amountOut The amount of tokenOut to receive
     event Swap(
-        address indexed sender,
-        address indexed tokenIn,
-        address indexed tokenOut,
-        uint256 amountIn,
-        uint256 amountOut
+        address indexed sender, address indexed tokenIn, address indexed tokenOut, uint256 amountIn, uint256 amountOut
     );
 }
 
@@ -42,10 +38,9 @@ interface ISimpleSwap is ISimpleSwapEvent {
     /// @return amountA The actually amount of tokenA added
     /// @return amountB The actually amount of tokenB added
     /// @return liquidity The amount of liquidity minted
-    function addLiquidity(
-        uint256 amountAIn,
-        uint256 amountBIn
-    ) external returns (uint256 amountA, uint256 amountB, uint256 liquidity);
+    function addLiquidity(uint256 amountAIn, uint256 amountBIn)
+        external
+        returns (uint256 amountA, uint256 amountB, uint256 liquidity);
 
     /// @notice Remove liquidity from the pool
     /// @param liquidity The amount of liquidity to remove
