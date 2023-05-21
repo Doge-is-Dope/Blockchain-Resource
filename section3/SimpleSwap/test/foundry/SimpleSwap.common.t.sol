@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.17;
 
-import { SimpleSwapSetUp } from "./helper/SimpleSwapSetUp.sol";
-import { Math } from "@openzeppelin/contracts/utils/math/Math.sol";
-import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import {SimpleSwapSetUp} from "./helper/SimpleSwapSetUp.sol";
+import {Math} from "@openzeppelin/contracts/utils/math/Math.sol";
+import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-contract SimplwSwapGetterTest is SimpleSwapSetUp {
+contract SimpleSwapGetterTest is SimpleSwapSetUp {
     function setUp() public override {
         super.setUp();
     }
